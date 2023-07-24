@@ -126,11 +126,11 @@ rec {
         outputsBuilder = outputs-builder;
       };
 
-      flake-utils-plus-outputs =
-        core-inputs.flake-utils-plus.lib.mkFlake flake-options;
+      flake-parts-outputs =
+        core-inputs.flake-parts.lib.mkFlake flake-options;
 
       flake-outputs =
-        flake-utils-plus-outputs // {
+        flake-parts-outputs // {
           inherit overlays;
           overlay = overlays.default;
         };

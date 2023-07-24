@@ -5,7 +5,7 @@
 
 let
   inherit (builtins) readDir pathExists;
-  inherit (core-inputs) flake-utils-plus;
+  # inherit (core-inputs) flake-utils-plus;
   inherit (core-inputs.nixpkgs.lib) assertMsg filterAttrs mapAttrsToList flatten;
 
   file-name-regex = "(.*)\\.(.*)$";
