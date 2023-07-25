@@ -134,7 +134,7 @@ rec {
           inherit overlays;
           overlay = overlays.default;
         };
-    in {
+    in rec {
     preSystem = flake-outputs;
     };
 }
